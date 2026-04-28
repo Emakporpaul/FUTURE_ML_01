@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Virtual env
+.venv/
+
+# Data (do not commit Kaggle data)
+data/
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Models / outputs (optional to keep out if large)
+models/
+outputs/
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
