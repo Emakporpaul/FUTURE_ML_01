@@ -7,6 +7,10 @@ import json
 from datetime import datetime
 import matplotlib.pyplot as plt
 
+import sys
+import os
+sys.path.insert(0, os.path.dirname(__file__))
+
 from features import build_full_features
 from config import (
     TRAIN_PATH, TEST_PATH, OIL_PATH, HOLIDAYS_PATH,
