@@ -115,8 +115,9 @@ def load_uploads(train_bytes, test_bytes, oil_bytes, hol_bytes):
 
 @st.cache_resource
 def load_model_bytes(model_bytes):
-    import pickle
-    return pickle.loads(model_bytes)
+    import joblib
+    import io
+    return joblib.load(io.BytesIO(model_bytes))
 
 train, test, oil, hol = load_uploads(
     train_file.read(),
